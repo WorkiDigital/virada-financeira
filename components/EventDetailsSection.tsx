@@ -34,9 +34,13 @@ const EventDetailsSection: React.FC = () => {
             <p className="font-bold text-accent">Presencial | Vagas Limitadas</p>
           </div>
           <div className="mt-10">
-            <a href="#inscricao">
-              <CtaButton>Inscreva-se Agora</CtaButton>
-            </a>
+              <CtaButton
+                href="https://form.spotform.com.br/viradafinanceiraoficial"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Inscreva-se Agora
+              </CtaButton>
           </div>
         </div>
         <div className="rounded-3xl overflow-hidden shadow-2xl border border-light/10 h-80 md:h-full">

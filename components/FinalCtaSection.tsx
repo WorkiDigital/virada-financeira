@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Section from './Section';
 import CtaButton from './CtaButton';
@@ -11,9 +10,13 @@ const FinalCtaSection: React.FC = () => {
         Vagas limitadas para garantir proximidade, qualidade e resultado. Não deixe para depois.
       </p>
       <div className="mt-10">
-         <a href="#inscricao">
-            <CtaButton>Sim, quero garantir minha vaga!</CtaButton>
-        </a>
+         <CtaButton
+            href="https://form.spotform.com.br/viradafinanceiraoficial"
+            target="_blank"
+            rel="noopener noreferrer"
+         >
+            Sim, quero garantir minha vaga!
+        </CtaButton>
       </div>
     </Section>
   );

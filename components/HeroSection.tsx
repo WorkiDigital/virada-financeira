@@ -26,11 +26,13 @@ const HeroSection: React.FC = () => {
         </p>
         
         <div className="mt-10">
-            <a href="#inscricao">
-                <CtaButton className="animate-subtle-pulse">
-                    Quero Garantir Minha Vaga
-                </CtaButton>
-            </a>
+            <CtaButton 
+                href="https://form.spotform.com.br/viradafinanceiraoficial"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="animate-subtle-pulse">
+                Quero Garantir Minha Vaga
+            </CtaButton>
           <p className="mt-4 text-sm text-light-gray/80">Vagas limitadas! Garanta a sua agora.</p>
         </div>
 
