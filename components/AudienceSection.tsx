@@ -29,7 +29,7 @@ const AudienceSection: React.FC = () => {
       </div>
       <div className="mt-16 grid gap-8 md:grid-cols-3">
         {profiles.map((profile) => (
-          <div key={profile.name} className="bg-dark/20 rounded-3xl overflow-hidden shadow-lg border border-light/10 group">
+          <div key={profile.name} className="bg-surface rounded-3xl overflow-hidden shadow-lg border border-light/10 group">
             <img src={profile.imageUrl} alt={profile.name} className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" />
             <div className="p-8">
               <h3 className="text-xl font-bold text-accent">{profile.name}</h3>

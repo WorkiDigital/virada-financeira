@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 
 interface CountdownTimerProps {
@@ -17,7 +18,7 @@ interface TimeUnitProps {
 }
 
 const TimeUnit: React.FC<TimeUnitProps> = ({ value, label }) => (
-  <div className="flex flex-col items-center justify-center bg-dark/30 backdrop-blur-sm rounded-2xl p-4 min-w-[70px] sm:min-w-[90px] border border-light/10 shadow-lg">
+  <div className="flex flex-col items-center justify-center bg-black/30 backdrop-blur-sm rounded-2xl p-4 min-w-[70px] sm:min-w-[90px] border border-light/10 shadow-lg">
     <span className="text-3xl sm:text-4xl font-extrabold text-accent">{String(value).padStart(2, '0')}</span>
     <span className="text-xs sm:text-sm font-medium text-light-gray uppercase tracking-wider">{label}</span>
   </div>

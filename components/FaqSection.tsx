@@ -25,7 +25,7 @@ const faqItems: FaqItem[] = [
 
 const FaqSection: React.FC = () => {
   return (
-    <Section className="bg-dark/20">
+    <Section>
       <div className="text-center">
         <h2 className="text-3xl font-extrabold text-light sm:text-4xl">Perguntas Frequentes</h2>
         <p className="mt-4 text-lg text-light-gray max-w-2xl mx-auto">Tire suas últimas dúvidas antes de garantir sua vaga.</p>

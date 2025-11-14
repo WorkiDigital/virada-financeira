@@ -24,7 +24,7 @@ const testimonials: Testimonial[] = [
 
 const WhyAttendSection: React.FC = () => {
   return (
-    <Section className="bg-dark/20">
+    <Section>
       <div className="text-center">
         <h2 className="text-3xl font-extrabold text-light sm:text-4xl">Por que participar?</h2>
         <p className="mt-4 text-lg text-light-gray max-w-3xl mx-auto">
@@ -33,7 +33,7 @@ const WhyAttendSection: React.FC = () => {
       </div>
       <div className="mt-16 grid gap-8 lg:grid-cols-3">
         {testimonials.map((testimonial) => (
-          <div key={testimonial.author} className="p-8 bg-primary rounded-3xl shadow-lg border border-light/10 flex flex-col">
+          <div key={testimonial.author} className="p-8 bg-surface rounded-3xl shadow-lg border border-light/10 flex flex-col">
             <QuoteIcon className="h-10 w-10 text-accent mb-4" />
             <blockquote className="text-light-gray flex-grow">"{testimonial.quote}"</blockquote>
             <footer className="mt-6">
