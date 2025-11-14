@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imersão Virada Financeira - Fortaleza</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'primary': '#14213D',
+            'accent': '#FCA311',
+            'light-gray': '#E5E5E5',
+            'dark': '#000000',
+            'light': '#FFFFFF',
+          },
+          animation: {
+            'subtle-pulse': 'subtle-pulse 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          },
+          keyframes: {
+            'subtle-pulse': {
+              '0%, 100%': { 
+                transform: 'scale(1)',
+                'box-shadow': '0 10px 15px -3px rgba(252, 163, 17, 0.2), 0 4px 6px -2px rgba(252, 163, 17, 0.1)' 
+              },
+              '50%': { 
+                transform: 'scale(1.03)',
+                'box-shadow': '0 20px 25px -5px rgba(252, 163, 17, 0.3), 0 10px 10px -5px rgba(252, 163, 17, 0.15)' 
+              },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+<body class="bg-primary text-light">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
