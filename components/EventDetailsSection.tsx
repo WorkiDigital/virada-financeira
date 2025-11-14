@@ -1,10 +1,13 @@
-
 import React from 'react';
 import Section from './Section';
 import CtaButton from './CtaButton';
 import MapPinIcon from './icons/MapPinIcon';
 
 const EventDetailsSection: React.FC = () => {
+  const locationName = "Hotel Gran Mareiro";
+  const locationAddress = "Rua Oswaldo Araújo, 100 - Praia do Futuro, Fortaleza - CE, 60177-325";
+  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${locationName}, ${locationAddress}`)}`;
+
   return (
     <Section>
       <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -13,13 +16,21 @@ const EventDetailsSection: React.FC = () => {
           <div className="mt-8 space-y-4 text-lg text-light-gray">
             <p><strong className="text-light">Data:</strong> 07 de Dezembro</p>
             <p><strong className="text-light">Horário:</strong> 14:30</p>
-            <div className="flex items-start justify-center md:justify-start">
-               <MapPinIcon className="h-6 w-6 text-accent mt-1 mr-2 flex-shrink-0" />
-               <div>
-                  <p><strong className="text-light">Local:</strong> Hotel Gran Mareiro</p>
-                  <p className="text-base text-light-gray/70">Rua Oswaldo Araújo, 100 - Praia do Futuro, Fortaleza - CE, 60177-325</p>
-               </div>
-            </div>
+            <a
+              href={googleMapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-block"
+              aria-label={`Ver ${locationName} no Google Maps`}
+            >
+              <div className="flex items-start justify-center md:justify-start">
+                 <MapPinIcon className="h-6 w-6 text-accent mt-1 mr-2 flex-shrink-0" />
+                 <div>
+                    <p><strong className="text-light">Local:</strong> {locationName}</p>
+                    <p className="text-base text-light-gray/70 group-hover:text-light-gray group-hover:underline transition-colors duration-300">{locationAddress}</p>
+                 </div>
+              </div>
+            </a>
             <p className="font-bold text-accent">Presencial | Vagas Limitadas</p>
           </div>
           <div className="mt-10">
