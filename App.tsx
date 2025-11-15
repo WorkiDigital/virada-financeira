@@ -167,7 +167,7 @@ const App: React.FC = () => {
         {/* Placeholder for global header as per instructions */}
         <h1 className="text-2xl font-bold tracking-tight text-light sm:text-3xl">Imersão Virada Financeira</h1>
       </header>
-      
+
       <main>
         <HeroSection />
         <ExperienceSection />

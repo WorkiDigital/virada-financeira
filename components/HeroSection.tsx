@@ -14,6 +14,12 @@ const HeroSection: React.FC = () => {
       />
       <div className="absolute inset-0 z-10 bg-primary bg-opacity-80 backdrop-blur-sm"></div>
       <div className="relative z-20 text-center text-light px-6">
+        
+        <div className="mb-8">
+            <h3 className="text-xl font-bold tracking-tight text-light mb-4">A imersão começa em:</h3>
+            <CountdownTimer targetDate={eventDate} />
+        </div>
+
         <p className="text-accent font-bold tracking-wider mb-4">FORTALEZA | 07 DE DEZEMBRO</p>
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight uppercase text-accent">
           VIRADA FINANCEIRA 2025
@@ -36,10 +42,6 @@ const HeroSection: React.FC = () => {
           <p className="mt-4 text-sm text-light-gray/80">Vagas limitadas! Garanta a sua agora.</p>
         </div>
 
-        <div className="mt-12">
-            <h3 className="text-xl font-bold tracking-tight text-light mb-4">A imersão começa em:</h3>
-            <CountdownTimer targetDate={eventDate} />
-        </div>
       </div>
     </section>
   );
