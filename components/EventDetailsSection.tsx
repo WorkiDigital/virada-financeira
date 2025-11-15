@@ -4,7 +4,7 @@ import CtaButton from './CtaButton';
 import MapPinIcon from './icons/MapPinIcon';
 
 const EventDetailsSection: React.FC = () => {
-  const locationName = "Hotel Gran Mareiro";
+  const locationName = "Gran Mareiro Eventos";
   const locationAddress = "Rua Oswaldo Araújo, 100 - Praia do Futuro, Fortaleza - CE, 60177-325";
   const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${locationName}, ${locationAddress}`)}`;
 
@@ -44,7 +44,7 @@ const EventDetailsSection: React.FC = () => {
           </div>
         </div>
         <div className="rounded-3xl overflow-hidden shadow-2xl border border-light/10 h-80 md:h-full">
-          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hotel Gran Mareiro em Fortaleza" className="w-full h-full object-cover" />
+          <img src="https://granmareiro.com.br/wp-content/uploads/2023/01/3.jpeg" alt="Salão de eventos do Gran Mareiro, preparado para a imersão" className="w-full h-full object-cover" />
         </div>
       </div>
     </Section>

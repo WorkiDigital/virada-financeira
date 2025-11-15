@@ -1,32 +1,29 @@
 
 import React from 'react';
 import Section from './Section';
-import PresentationChartBarIcon from './icons/PresentationChartBarIcon';
-import UsersIcon from './icons/UsersIcon';
-import TrendingUpIcon from './icons/TrendingUpIcon';
-import CoffeeIcon from './icons/CoffeeIcon';
 import SectionHeader from './SectionHeader';
+import CheckCircleIcon from './icons/CheckCircleIcon';
 
 const features = [
   {
     name: 'Curso Online Gratuito (30/11 a 04/12)',
     description: 'Jornada completa para começar ou evoluir no mercado financeiro.',
-    icon: PresentationChartBarIcon,
+    icon: CheckCircleIcon,
   },
   {
     name: 'Imersão Presencial (07/12)',
     description: 'Conteúdo prático, ambiente imersivo e network de verdade.',
-    icon: UsersIcon,
+    icon: CheckCircleIcon,
   },
   {
     name: 'Operações ao Vivo',
     description: 'Veja na prática como aplicar os conceitos em tempo real.',
-    icon: TrendingUpIcon,
+    icon: CheckCircleIcon,
   },
   {
     name: 'Coffee Break Incluso',
     description: 'Momento para trocar experiências, conexões e fortalecer sua caminhada.',
-    icon: CoffeeIcon,
+    icon: CheckCircleIcon,
   },
 ];
 
