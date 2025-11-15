@@ -3,6 +3,7 @@ import React from 'react';
 import Section from './Section';
 import FaqItemComponent from './FaqItem';
 import { FaqItem } from '../types';
+import SectionHeader from './SectionHeader';
 
 const faqItems: FaqItem[] = [
   {
@@ -26,10 +27,10 @@ const faqItems: FaqItem[] = [
 const FaqSection: React.FC = () => {
   return (
     <Section>
-      <div className="text-center">
-        <h2 className="text-3xl font-extrabold text-light sm:text-4xl">Perguntas Frequentes</h2>
-        <p className="mt-4 text-lg text-light-gray max-w-2xl mx-auto">Tire suas últimas dúvidas antes de garantir sua vaga.</p>
-      </div>
+      <SectionHeader
+        title="Perguntas Frequentes"
+        subtitle="Tire suas últimas dúvidas antes de garantir sua vaga."
+      />
       <div className="mt-12 max-w-3xl mx-auto space-y-4">
         {faqItems.map((item, index) => (
           <FaqItemComponent key={index} question={item.question} answer={item.answer} />

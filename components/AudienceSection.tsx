@@ -1,6 +1,7 @@
 
 import React from 'react';
 import Section from './Section';
+import SectionHeader from './SectionHeader';
 
 const profiles = [
   {
@@ -23,10 +24,10 @@ const profiles = [
 const AudienceSection: React.FC = () => {
   return (
     <Section>
-      <div className="text-center">
-        <h2 className="text-3xl font-extrabold text-light sm:text-4xl">Para quem é este evento?</h2>
-        <p className="mt-4 text-lg text-light-gray max-w-2xl mx-auto">Se você se identifica com algum destes perfis, esta imersão é para você.</p>
-      </div>
+      <SectionHeader
+        title="Para quem é este evento?"
+        subtitle="Se você se identifica com algum destes perfis, esta imersão é para você."
+      />
       <div className="mt-16 grid gap-8 md:grid-cols-3">
         {profiles.map((profile) => (
           <div key={profile.name} className="bg-surface rounded-3xl overflow-hidden shadow-lg border border-light/10 group">

@@ -1,14 +1,16 @@
+
 import React from 'react';
 import Section from './Section';
 import CtaButton from './CtaButton';
+import SectionHeader from './SectionHeader';
 
 const FinalCtaSection: React.FC = () => {
   return (
     <Section className="text-center">
-      <h2 className="text-3xl font-extrabold text-light sm:text-4xl">Sua Virada Financeira Começa Agora</h2>
-      <p className="mt-4 text-lg text-light-gray max-w-2xl mx-auto">
-        Vagas limitadas para garantir proximidade, qualidade e resultado. Não deixe para depois.
-      </p>
+      <SectionHeader
+        title="Sua Virada Financeira Começa Agora"
+        subtitle="Vagas limitadas para garantir proximidade, qualidade e resultado. Não deixe para depois."
+      />
       <div className="mt-10">
          <CtaButton
             href="https://form.spotform.com.br/viradafinanceiraoficial"

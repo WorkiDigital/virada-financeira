@@ -5,6 +5,7 @@ import PresentationChartBarIcon from './icons/PresentationChartBarIcon';
 import UsersIcon from './icons/UsersIcon';
 import TrendingUpIcon from './icons/TrendingUpIcon';
 import CoffeeIcon from './icons/CoffeeIcon';
+import SectionHeader from './SectionHeader';
 
 const features = [
   {
@@ -32,10 +33,10 @@ const features = [
 const ExperienceSection: React.FC = () => {
   return (
     <Section>
-      <div className="text-center">
-        <h2 className="text-3xl font-extrabold text-light sm:text-4xl">O que você vai encontrar nessa experiência</h2>
-        <p className="mt-4 text-lg text-light-gray max-w-2xl mx-auto">Uma jornada completa para sua transformação no mercado financeiro.</p>
-      </div>
+      <SectionHeader
+        title="O que você vai encontrar nessa experiência"
+        subtitle="Uma jornada completa para sua transformação no mercado financeiro."
+      />
       <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         {features.map((feature) => (
           <div key={feature.name} className="flex flex-col items-center text-center p-6 bg-surface rounded-2xl border border-light/10 transform transition-transform duration-300 hover:-translate-y-2">
