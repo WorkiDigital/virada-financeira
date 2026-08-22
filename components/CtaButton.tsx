@@ -9,9 +9,9 @@ const CtaButton: React.FC<CtaButtonProps> = ({ children, className = '', ...prop
   return (
     <a
       {...props}
-      className={`inline-block text-center w-full sm:w-auto px-8 py-4 bg-accent text-primary font-bold text-lg rounded-2xl shadow-lg shadow-accent/30
-                 hover:brightness-105 hover:text-light focus:outline-none focus:ring-4 focus:ring-accent focus:ring-opacity-50
-                 transform transition-all duration-300 ease-in-out hover:scale-105 ${className}`}
+      className={`inline-block text-center w-full sm:w-auto px-10 py-4 bg-accent text-primary font-bold tracking-wide text-lg rounded-sm shadow-xl shadow-accent/20
+                 hover:bg-light hover:text-primary focus:outline-none focus:ring-1 focus:ring-accent focus:ring-offset-2 focus:ring-offset-primary
+                 transform transition-all duration-300 ease-out hover:-translate-y-1 ${className}`}
     >
       {children}
     </a>

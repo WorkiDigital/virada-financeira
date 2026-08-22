@@ -20,14 +20,14 @@ const HeroSection: React.FC = () => {
             <CountdownTimer targetDate={eventDate} />
         </div>
 
-        <p className="text-accent font-bold tracking-wider mb-4">FORTALEZA | 31 DE AGOSTO</p>
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight uppercase text-accent">
-          VIRADA FINANCEIRA 2026
+        <p className="text-accent font-semibold tracking-[0.2em] text-sm uppercase mb-6">FORTALEZA | 31 DE AGOSTO</p>
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-serif text-accent mb-6 leading-tight">
+          Virada Financeira 2026
         </h1>
-        <h2 className="mt-2 text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-light">
+        <h2 className="mt-4 text-2xl sm:text-3xl md:text-4xl font-light tracking-wide text-light">
           Destrave seus ganhos no mercado financeiro
         </h2>
-        <p className="mt-6 max-w-2xl mx-auto text-lg sm:text-xl text-light-gray">
+        <p className="mt-8 max-w-2xl mx-auto text-lg sm:text-xl font-light text-light-gray/90 leading-relaxed">
           Aprenda com quem vive o mercado todos os dias em uma imersão presencial e exclusiva para você atingir a consistência.
         </p>
         

@@ -162,10 +162,9 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="bg-primary overflow-x-hidden">
-      <header className="absolute top-0 left-0 w-full z-10 p-4 bg-transparent text-center">
-        {/* Placeholder for global header as per instructions */}
-        <h1 className="text-2xl font-bold tracking-tight text-light sm:text-3xl">Imersão Virada Financeira</h1>
+    <div className="bg-primary overflow-x-hidden font-sans">
+      <header className="absolute top-0 left-0 w-full z-10 p-6 bg-transparent text-center">
+        <h1 className="text-xl md:text-2xl font-serif text-accent tracking-widest uppercase">Virada Financeira</h1>
       </header>
 
       <main>
@@ -178,10 +177,10 @@ const App: React.FC = () => {
         <FinalCtaSection />
       </main>
 
-      <footer className="py-8 text-center text-light-gray/70">
-        {/* Placeholder for global footer */}
-        <p>&copy; 2026 Virada Financeira. Todos os direitos reservados.</p>
-        <p>Contato para suporte: suporte@viradafinanceira.com</p>
+      <footer className="py-12 text-center text-light-gray/60 font-light border-t border-light/5">
+        <p className="font-serif text-xl text-accent mb-4">Virada Financeira</p>
+        <p className="mb-2">&copy; 2026 Virada Financeira. Todos os direitos reservados.</p>
+        <p className="text-sm">Contato: suporte@viradafinanceira.com</p>
       </footer>
     </div>
   );

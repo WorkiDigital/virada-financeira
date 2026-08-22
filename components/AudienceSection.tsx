@@ -30,11 +30,13 @@ const AudienceSection: React.FC = () => {
       />
       <div className="mt-16 grid gap-8 md:grid-cols-3">
         {profiles.map((profile) => (
-          <div key={profile.name} className="bg-surface rounded-3xl overflow-hidden shadow-lg border border-light/10 group">
-            <img src={profile.imageUrl} alt={profile.name} className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" />
+          <div key={profile.name} className="bg-surface/50 backdrop-blur-sm rounded-sm overflow-hidden border border-light/5 group">
+            <div className="overflow-hidden h-56">
+                <img src={profile.imageUrl} alt={profile.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            </div>
             <div className="p-8">
-              <h3 className="text-xl font-bold text-accent">{profile.name}</h3>
-              <p className="mt-2 text-light-gray">{profile.description}</p>
+              <h3 className="text-2xl font-serif text-accent">{profile.name}</h3>
+              <p className="mt-4 text-light-gray/80 font-light leading-relaxed">{profile.description}</p>
             </div>
           </div>
         ))}

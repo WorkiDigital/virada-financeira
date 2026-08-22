@@ -13,7 +13,7 @@ const StickyHeader: React.FC<StickyHeaderProps> = ({ isVisible, eventDate }) => 
       aria-hidden={!isVisible}
       className={`fixed top-0 left-0 w-full z-40 transition-all duration-500 ease-in-out ${
         isVisible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
-      } bg-surface/90 backdrop-blur-lg shadow-lg border-b border-light/10`}
+      } bg-surface/80 backdrop-blur-md border-b border-light/5`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">

@@ -9,9 +9,9 @@ interface SectionHeaderProps {
 const SectionHeader: React.FC<SectionHeaderProps> = ({ title, subtitle, className = '' }) => {
   return (
     <div className={`text-center ${className}`}>
-      <h2 className="text-3xl font-extrabold text-light sm:text-4xl">{title}</h2>
+      <h2 className="text-4xl font-serif text-accent sm:text-5xl">{title}</h2>
       {subtitle && (
-        <p className="mt-4 text-lg text-light-gray max-w-3xl mx-auto">{subtitle}</p>
+        <p className="mt-6 text-lg font-light text-light-gray/90 max-w-3xl mx-auto leading-relaxed">{subtitle}</p>
       )}
     </div>
   );

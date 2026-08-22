@@ -32,12 +32,12 @@ const WhyAttendSection: React.FC = () => {
       />
       <div className="mt-16 grid gap-8 lg:grid-cols-3">
         {testimonials.map((testimonial) => (
-          <div key={testimonial.author} className="p-8 bg-surface rounded-3xl shadow-lg border border-light/10 flex flex-col">
-            <QuoteIcon className="h-10 w-10 text-accent mb-4" />
-            <blockquote className="text-light-gray flex-grow">"{testimonial.quote}"</blockquote>
-            <footer className="mt-6">
-              <p className="font-bold text-light">{testimonial.author}</p>
-              <p className="text-sm text-light-gray/70">{testimonial.role}</p>
+          <div key={testimonial.author} className="p-10 bg-surface/40 backdrop-blur-sm rounded-sm border border-light/5 flex flex-col relative group">
+            <QuoteIcon className="h-8 w-8 text-accent/50 mb-6 absolute top-8 left-8" />
+            <blockquote className="text-light-gray/90 font-light leading-relaxed flex-grow mt-10">"{testimonial.quote}"</blockquote>
+            <footer className="mt-8 pt-6 border-t border-light/5">
+              <p className="font-medium tracking-wide text-light">{testimonial.author}</p>
+              <p className="text-xs tracking-wider uppercase text-accent mt-1">{testimonial.role}</p>
             </footer>
           </div>
         ))}

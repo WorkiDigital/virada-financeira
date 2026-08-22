@@ -29,9 +29,9 @@ const TimeUnit: React.FC<TimeUnitProps> = ({ value, label, small }) => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center bg-surface rounded-xl p-4 min-w-[70px] sm:min-w-[90px] border border-white/10">
-      <span className="text-3xl sm:text-4xl font-extrabold text-accent">{String(value).padStart(2, '0')}</span>
-      <span className="text-xs sm:text-sm font-medium text-light uppercase tracking-wider">{label}</span>
+    <div className="flex flex-col items-center justify-center bg-surface/80 backdrop-blur-md rounded-sm p-4 min-w-[70px] sm:min-w-[90px] border border-light/5 shadow-2xl">
+      <span className="text-3xl sm:text-4xl font-serif text-light">{String(value).padStart(2, '0')}</span>
+      <span className="text-xs sm:text-sm font-light text-accent uppercase tracking-widest mt-1">{label}</span>
     </div>
   );
 };
