@@ -21,7 +21,7 @@ const StickyHeader: React.FC<StickyHeaderProps> = ({ isVisible, eventDate }) => 
           <div className="flex-1 flex justify-start">
              <div className="hidden sm:block">
                 <p className="text-sm font-bold text-light whitespace-nowrap">Imersão Virada Financeira</p>
-                <p className="text-xs text-light-gray whitespace-nowrap">Fortaleza | 07 de Dezembro</p>
+                <p className="text-xs text-light-gray whitespace-nowrap">Fortaleza | 31 de Agosto</p>
              </div>
           </div>
 

@@ -4,7 +4,7 @@ import CountdownTimer from './CountdownTimer';
 
 const HeroSection: React.FC = () => {
   // Ajustado: Mudei o ano para o futuro para garantir que o contador esteja sempre ativo para demonstração.
-  const eventDate = '2025-12-07T14:30:00-03:00';
+  const eventDate = '2026-08-31T14:30:00-03:00';
 
   return (
     <section id="inscricao" className="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden">
@@ -20,9 +20,9 @@ const HeroSection: React.FC = () => {
             <CountdownTimer targetDate={eventDate} />
         </div>
 
-        <p className="text-accent font-bold tracking-wider mb-4">FORTALEZA | 07 DE DEZEMBRO</p>
+        <p className="text-accent font-bold tracking-wider mb-4">FORTALEZA | 31 DE AGOSTO</p>
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight uppercase text-accent">
-          VIRADA FINANCEIRA 2025
+          VIRADA FINANCEIRA 2026
         </h1>
         <h2 className="mt-2 text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-light">
           Destrave seus ganhos no mercado financeiro

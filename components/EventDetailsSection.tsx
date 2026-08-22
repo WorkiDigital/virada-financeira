@@ -4,9 +4,9 @@ import CtaButton from './CtaButton';
 import MapPinIcon from './icons/MapPinIcon';
 
 const EventDetailsSection: React.FC = () => {
-  const locationName = "Gran Mareiro Eventos";
-  const locationAddress = "Rua Oswaldo Araújo, 100 - Praia do Futuro, Fortaleza - CE, 60177-325";
-  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${locationName}, ${locationAddress}`)}`;
+  const locationName = "Piazza";
+  const locationAddress = "Fortaleza - CE";
+  const googleMapsUrl = "https://www.google.com/search?q=PIAZZA&rlz=1C1VDKB_pt-PTBR1221BR1221&oq=PIAZZA&gs_lcrp=EgZjaHJvbWUyEQgAEEUYORhDGOMCGIAEGIoFMgwIARAuGEMYgAQYigUyDAgCEAAYQxiABBiKBTINCAMQLhivARjHARiABDIHCAQQABiABDIMCAUQABhDGIAEGIoFMgcIBhAAGIAEMgcIBxAAGIAEMgwICBAAGEMYgAQYigUyDAgJEAAYQxiABBiKBdIBCDIwNzhqMGo3qAIAsAIA&sourceid=chrome&source=chrome.ob&ie=UTF-8&zx=1787166117654#sv=CAwStAEKBmxjbF9wdhIuCgNwdnESJ0NnMHZaeTh4TVhsNmJHNTZaRFJrSWd3S0JsQkpRVnBhUVJBQ0dBTRJFCgNscWkSPkNnWlFTVUZhV2tGSWpPRzhxdnE5Z0lBSVdnd1FBQmdBSWdad2FXRjZlbUdTQVF0bGRtVnVkRjkyWlc1MVpREhIKA3RicxILbHJmOiEzc0lBRT0SCwoBcRIGUElBWlpBGhJsb2NhbC1wbGFjZS12aWV3ZXIYCiC9wrClDQ";
 
   return (
     <Section>
@@ -14,7 +14,7 @@ const EventDetailsSection: React.FC = () => {
         <div className="text-center md:text-left">
           <h2 className="text-3xl font-extrabold text-light sm:text-4xl">Detalhes do Evento</h2>
           <div className="mt-8 space-y-4 text-lg text-light-gray">
-            <p><strong className="text-light">Data:</strong> 07 de Dezembro</p>
+            <p><strong className="text-light">Data:</strong> 31 de Agosto</p>
             <p><strong className="text-light">Horário:</strong> 14:30</p>
             <a
               href={googleMapsUrl}
@@ -44,7 +44,7 @@ const EventDetailsSection: React.FC = () => {
           </div>
         </div>
         <div className="rounded-3xl overflow-hidden shadow-2xl border border-light/10 h-80 md:h-full">
-          <img src="https://granmareiro.com.br/wp-content/uploads/2023/01/3.jpeg" alt="Salão de eventos do Gran Mareiro, preparado para a imersão" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2000&auto=format&fit=crop" alt="Salão de eventos Piazza, preparado para a imersão" className="w-full h-full object-cover" />
         </div>
       </div>
     </Section>

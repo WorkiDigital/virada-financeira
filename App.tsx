@@ -180,7 +180,7 @@ const App: React.FC = () => {
 
       <footer className="py-8 text-center text-light-gray/70">
         {/* Placeholder for global footer */}
-        <p>&copy; 2024 Virada Financeira. Todos os direitos reservados.</p>
+        <p>&copy; 2026 Virada Financeira. Todos os direitos reservados.</p>
         <p>Contato para suporte: suporte@viradafinanceira.com</p>
       </footer>
     </div>
