@@ -5,8 +5,8 @@ import MapPinIcon from './icons/MapPinIcon';
 
 const EventDetailsSection: React.FC = () => {
   const locationName = "Piazza";
-  const locationAddress = "Fortaleza - CE";
-  const googleMapsUrl = "https://www.google.com/search?q=PIAZZA&rlz=1C1VDKB_pt-PTBR1221BR1221&oq=PIAZZA&gs_lcrp=EgZjaHJvbWUyEQgAEEUYORhDGOMCGIAEGIoFMgwIARAuGEMYgAQYigUyDAgCEAAYQxiABBiKBTINCAMQLhivARjHARiABDIHCAQQABiABDIMCAUQABhDGIAEGIoFMgcIBhAAGIAEMgcIBxAAGIAEMgwICBAAGEMYgAQYigUyDAgJEAAYQxiABBiKBdIBCDIwNzhqMGo3qAIAsAIA&sourceid=chrome&source=chrome.ob&ie=UTF-8&zx=1787166117654#sv=CAwStAEKBmxjbF9wdhIuCgNwdnESJ0NnMHZaeTh4TVhsNmJHNTZaRFJrSWd3S0JsQkpRVnBhUVJBQ0dBTRJFCgNscWkSPkNnWlFTVUZhV2tGSWpPRzhxdnE5Z0lBSVdnd1FBQmdBSWdad2FXRjZlbUdTQVF0bGRtVnVkRjkyWlc1MVpREhIKA3RicxILbHJmOiEzc0lBRT0SCwoBcRIGUElBWlpBGhJsb2NhbC1wbGFjZS12aWV3ZXIYCiC9wrClDQ";
+  const locationAddress = "R. Nunes Valente, 1309 - Aldeota, Fortaleza - CE, 60813-795";
+  const googleMapsUrl = "https://share.google/5U1EDjZbu7jWeG3Qf";
 
   return (
     <Section>
@@ -15,7 +15,7 @@ const EventDetailsSection: React.FC = () => {
           <h2 className="text-4xl font-serif text-accent sm:text-5xl mb-6">Detalhes do Evento</h2>
           <div className="mt-8 space-y-6 text-lg text-light-gray font-light">
             <p><strong className="text-light font-medium tracking-wide uppercase text-sm">Data:</strong><br /> 31 de Agosto</p>
-            <p><strong className="text-light font-medium tracking-wide uppercase text-sm">Horário:</strong><br /> 14:30</p>
+            <p><strong className="text-light font-medium tracking-wide uppercase text-sm">Horário:</strong><br /> 17:30</p>
             <a
               href={googleMapsUrl}
               target="_blank"
@@ -43,9 +43,15 @@ const EventDetailsSection: React.FC = () => {
               </CtaButton>
           </div>
         </div>
-        <div className="rounded-sm overflow-hidden shadow-2xl h-80 md:h-[500px] relative group">
-          <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
-          <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=2000&auto=format&fit=crop" alt="Salão de eventos Piazza, preparado para a imersão" className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105" />
+        <div className="grid grid-cols-1 grid-rows-3 gap-4 h-[400px] md:h-[500px]">
+          <div className="rounded-sm overflow-hidden shadow-xl relative group row-span-2">
+             <div className="absolute inset-0 bg-primary/30 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
+             <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmk2e6Pknk30qidXv1X9NJ7PvZaKc2iiv3Cn4qgJzUYeBC7yODN62HYFtiWceXkDGijJWjnP9FWZ3PptSWJUttx7kVaSQqs2SCt28Cq7v5eTq1HJXio8Z8Y1hH49enLbwPEBOzs_QKUIb9p=s680-w680-h510-rw" alt="Auditório Rooftop Piazza Aldeota" className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105" />
+          </div>
+          <div className="rounded-sm overflow-hidden shadow-xl relative group row-span-1">
+             <div className="absolute inset-0 bg-primary/30 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
+             <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl2wvmDfXDVZZV-tt-EpDto9i4EYD7whULD1PeZ-DmvQ3hcUg92ntqTjtPlu3SQLgJUpsr1Z7eDKlfJSoybKHKYf8CKygT5dNnmdkqpqx6RwT5pFz9kN4xXomrW10QvVLR_Ri19ZlYX4dNa=s680-w680-h510-rw" alt="Espaço Corporativo Piazza" className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105" />
+          </div>
         </div>
       </div>
     </Section>

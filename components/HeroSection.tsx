@@ -4,7 +4,7 @@ import CountdownTimer from './CountdownTimer';
 
 const HeroSection: React.FC = () => {
   // Ajustado: Mudei o ano para o futuro para garantir que o contador esteja sempre ativo para demonstração.
-  const eventDate = '2026-08-31T14:30:00-03:00';
+  const eventDate = '2026-08-31T17:30:00-03:00';
 
   return (
     <section id="inscricao" className="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden">
