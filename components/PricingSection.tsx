@@ -152,7 +152,7 @@ const PricingSection: React.FC = () => {
 
             <div className="mt-auto">
               <a
-                href="https://pay.cakto.com.br/d2usqge_1061139"
+                href="https://pay.cakto.com.br/63utur9_1061427"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full flex justify-center py-4 bg-accent text-primary text-sm font-bold tracking-widest uppercase rounded-lg hover:bg-accent/90 transition-all duration-300 shadow-[0_0_20px_rgba(197,160,89,0.2)]"
