@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Section from './Section';
 import SectionHeader from './SectionHeader';
@@ -6,23 +5,23 @@ import CheckCircleIcon from './icons/CheckCircleIcon';
 
 const features = [
   {
-    name: 'Jornada Pré-evento',
-    description: 'Acesso a conteúdo preparatório para chegar afiado na imersão.',
+    name: 'Bloco 1: Mentalidade do Trader',
+    description: 'Comportamento e disciplina.',
     icon: CheckCircleIcon,
   },
   {
-    name: 'Imersão Presencial (31/08)',
-    description: 'Conteúdo prático, ambiente imersivo e network de alto nível.',
+    name: 'Bloco 2: As 3 Análises',
+    description: 'O tripé essencial para leitura e ação de mercado de forma consistente.',
     icon: CheckCircleIcon,
   },
   {
-    name: 'Operações ao Vivo',
-    description: 'Veja na prática como aplicar os conceitos em tempo real.',
+    name: 'Bloco 3: Planejamento do Trader',
+    description: 'Gestão financeira e decisão responsável.',
     icon: CheckCircleIcon,
   },
   {
-    name: 'Coffee Break Incluso',
-    description: 'Momento para trocar experiências, conexões e fortalecer sua caminhada.',
+    name: 'Bloco 4: Operação Ao Vivo',
+    description: 'Com Lázaro Fernandes. Entenda a aplicação real.',
     icon: CheckCircleIcon,
   },
 ];
@@ -31,10 +30,18 @@ const ExperienceSection: React.FC = () => {
   return (
     <Section>
       <SectionHeader
-        title="O que você vai encontrar nessa experiência"
-        subtitle="Uma jornada completa para sua transformação no mercado financeiro."
+        title="Transformação & A Experiência"
+        subtitle={
+          <>
+            O mercado financeiro não é um jogo. É uma profissão. <br/><br/>
+            O objetivo não é ensinar você a procurar dinheiro fácil, mas sim entender que resultados sustentáveis começam com: <span className="font-semibold text-light">Mentalidade, Conhecimento, Planejamento, Estratégia e Execução.</span>
+          </>
+        }
       />
-      <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-16 text-center">
+         <h3 className="text-2xl font-serif text-accent tracking-wide uppercase">O que vai acontecer na Imersão:</h3>
+      </div>
+      <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         {features.map((feature) => (
           <div key={feature.name} className="flex flex-col items-center text-center p-8 bg-surface/50 rounded-sm border border-light/5 transform transition-all duration-300 hover:-translate-y-1 hover:bg-surface hover:border-accent/30 group">
             <div className="flex items-center justify-center h-14 w-14 rounded-full bg-primary border border-accent/20 text-accent mb-6 group-hover:scale-110 transition-transform duration-300">
@@ -44,6 +51,16 @@ const ExperienceSection: React.FC = () => {
             <p className="mt-3 text-base font-light text-light-gray/80 leading-relaxed">{feature.description}</p>
           </div>
         ))}
+      </div>
+
+      <div className="mt-20 max-w-4xl mx-auto bg-surface/30 border border-accent/20 p-8 md:p-12 rounded-sm text-center relative overflow-hidden group">
+         <div className="absolute inset-0 bg-primary/40 backdrop-blur-sm z-0"></div>
+         <div className="relative z-10">
+            <h3 className="text-2xl font-serif text-accent mb-4">Sobre o Palestrante: Lázaro Fernandes</h3>
+            <p className="text-lg font-light text-light-gray/90 leading-relaxed max-w-2xl mx-auto">
+                Lázaro possui 6 anos de experiência e mais de R$1 milhão gerados. A apresentação focará em sua visão humana e profissional, sem promessas irreais.
+            </p>
+         </div>
       </div>
     </Section>
   );

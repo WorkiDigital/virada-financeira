@@ -20,26 +20,29 @@ const HeroSection: React.FC = () => {
             <CountdownTimer targetDate={eventDate} />
         </div>
 
-        <p className="text-accent font-semibold tracking-[0.2em] text-sm uppercase mb-6">FORTALEZA | 31 DE AGOSTO</p>
-        <h1 className="text-4xl sm:text-5xl md:text-7xl font-serif text-accent mb-6 leading-tight">
-          Virada Financeira 2026
+        <p className="text-accent font-semibold tracking-[0.15em] text-xs sm:text-sm md:text-base uppercase mb-6">
+          📅 31 DE AGOSTO &nbsp;|&nbsp; 🕠 17H30 &nbsp;|&nbsp; 📍 PIAZZA ALDEOTA — FORTALEZA
+        </p>
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-serif text-accent mb-6 leading-tight uppercase">
+          Imersão<br/>Virada Financeira
         </h1>
-        <h2 className="mt-4 text-2xl sm:text-3xl md:text-4xl font-light tracking-wide text-light">
-          Destrave seus ganhos no mercado financeiro
+        <h2 className="mt-4 text-2xl sm:text-3xl font-light tracking-wide text-light max-w-4xl mx-auto leading-relaxed">
+          Transforme sua visão sobre dinheiro, mercado e liberdade.
         </h2>
-        <p className="mt-8 max-w-2xl mx-auto text-lg sm:text-xl font-light text-light-gray/90 leading-relaxed">
-          Aprenda com quem vive o mercado todos os dias em uma imersão presencial e exclusiva para você atingir a consistência.
+        <p className="mt-6 max-w-3xl mx-auto text-base sm:text-lg font-light text-light-gray/90 leading-relaxed">
+          Uma experiência presencial para quem quer entender o mercado de forma profissional, desenvolver estratégia e descobrir um novo caminho para conquistar conhecimento e independência.
         </p>
         
-        <div className="mt-10">
-            <CtaButton 
-                href="https://pay.cakto.com.br/d2usqge_1061139"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="animate-subtle-pulse">
-                Quero Garantir Minha Vaga
-            </CtaButton>
-          <p className="mt-4 text-sm text-light-gray/80">Vagas limitadas! Garanta a sua agora.</p>
+        <div className="mt-10 flex flex-col items-center gap-4">
+          <a
+              href="#ofertas"
+              className="px-8 py-5 bg-accent text-primary font-bold tracking-wider uppercase text-sm rounded-sm hover:bg-accent/90 transition-all duration-300 shadow-[0_0_20px_rgba(197,160,89,0.3)] animate-subtle-pulse"
+          >
+              VER OPÇÕES DE INGRESSOS
+          </a>
+          <p className="mt-4 text-sm font-semibold text-accent tracking-widest uppercase">
+            [APENAS 50 VAGAS]
+          </p>
         </div>
 
       </div>

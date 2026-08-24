@@ -5,6 +5,7 @@ import AudienceSection from './components/AudienceSection';
 import WhyAttendSection from './components/WhyAttendSection';
 import EventDetailsSection from './components/EventDetailsSection';
 import FaqSection from './components/FaqSection';
+import PricingSection from './components/PricingSection';
 import FinalCtaSection from './components/FinalCtaSection';
 
 const App: React.FC = () => {
@@ -17,6 +18,7 @@ const App: React.FC = () => {
       <main>
         <HeroSection />
         <ExperienceSection />
+        <PricingSection />
         <AudienceSection />
         <WhyAttendSection />
         <EventDetailsSection />
