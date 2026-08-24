@@ -33,7 +33,7 @@ const StickyHeader: React.FC<StickyHeaderProps> = ({ isVisible, eventDate }) => 
           
           <div className="flex-1 flex justify-end">
             <CtaButton 
-               href="https://form.spotform.com.br/viradafinanceiraoficial"
+               href="https://pay.cakto.com.br/d2usqge_1061139"
                target="_blank"
                rel="noopener noreferrer"
                className="px-6 py-2 text-base !rounded-lg"

@@ -35,7 +35,7 @@ const EventDetailsSection: React.FC = () => {
           </div>
           <div className="mt-12">
               <CtaButton
-                href="https://form.spotform.com.br/viradafinanceiraoficial"
+                href="https://pay.cakto.com.br/d2usqge_1061139"
                 target="_blank"
                 rel="noopener noreferrer"
               >
