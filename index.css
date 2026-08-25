@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #050505;
+  --color-surface: #121212;
+  --color-accent: #C5A059;
+  --color-light-gray: #A1A1AA;
+  --color-light: #FAFAFA;
+  
+  --font-sans: 'Manrope', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  
+  --animate-subtle-pulse: subtle-pulse 3s ease-in-out infinite;
+
+  @keyframes subtle-pulse {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(197, 160, 89, 0.4);
+    }
+    50% {
+      transform: scale(1.02);
+      box-shadow: 0 0 20px 0 rgba(197, 160, 89, 0.1);
+    }
+  }
+}
+
+body {
+  scroll-behavior: smooth;
+  @apply bg-primary text-light;
+}

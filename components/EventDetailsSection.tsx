@@ -46,11 +46,11 @@ const EventDetailsSection: React.FC = () => {
         <div className="grid grid-cols-1 grid-rows-3 gap-4 h-[400px] md:h-[500px]">
           <div className="rounded-sm overflow-hidden shadow-xl relative group row-span-2">
              <div className="absolute inset-0 bg-primary/30 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
-             <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmk2e6Pknk30qidXv1X9NJ7PvZaKc2iiv3Cn4qgJzUYeBC7yODN62HYFtiWceXkDGijJWjnP9FWZ3PptSWJUttx7kVaSQqs2SCt28Cq7v5eTq1HJXio8Z8Y1hH49enLbwPEBOzs_QKUIb9p=s680-w680-h510-rw" alt="Auditório Rooftop Piazza Aldeota" className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105" />
+             <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmk2e6Pknk30qidXv1X9NJ7PvZaKc2iiv3Cn4qgJzUYeBC7yODN62HYFtiWceXkDGijJWjnP9FWZ3PptSWJUttx7kVaSQqs2SCt28Cq7v5eTq1HJXio8Z8Y1hH49enLbwPEBOzs_QKUIb9p=s680-w680-h510-rw" alt="Auditório Rooftop Piazza Aldeota" loading="lazy" className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105" />
           </div>
           <div className="rounded-sm overflow-hidden shadow-xl relative group row-span-1">
              <div className="absolute inset-0 bg-primary/30 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
-             <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl2wvmDfXDVZZV-tt-EpDto9i4EYD7whULD1PeZ-DmvQ3hcUg92ntqTjtPlu3SQLgJUpsr1Z7eDKlfJSoybKHKYf8CKygT5dNnmdkqpqx6RwT5pFz9kN4xXomrW10QvVLR_Ri19ZlYX4dNa=s680-w680-h510-rw" alt="Espaço Corporativo Piazza" className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105" />
+             <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl2wvmDfXDVZZV-tt-EpDto9i4EYD7whULD1PeZ-DmvQ3hcUg92ntqTjtPlu3SQLgJUpsr1Z7eDKlfJSoybKHKYf8CKygT5dNnmdkqpqx6RwT5pFz9kN4xXomrW10QvVLR_Ri19ZlYX4dNa=s680-w680-h510-rw" alt="Espaço Corporativo Piazza" loading="lazy" className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105" />
           </div>
         </div>
       </div>
