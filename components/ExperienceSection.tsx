@@ -60,9 +60,22 @@ const ExperienceSection: React.FC = () => {
                 <img src="https://i.imgur.com/39oYFvF.jpeg" alt="Lázaro Fernandes" loading="lazy" className="w-full h-full object-cover" />
             </div>
             <h3 className="text-2xl font-serif text-accent mb-4">Sobre o Palestrante: Lázaro Fernandes</h3>
-            <p className="text-lg font-light text-light-gray/90 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-lg font-light text-light-gray/90 leading-relaxed max-w-2xl mx-auto mb-6">
                 Lázaro possui 6 anos de experiência e mais de R$1 milhão gerados. A apresentação focará em sua visão humana e profissional, sem promessas irreais.
             </p>
+            <a 
+                href="https://www.instagram.com/lazarofernandes.of/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="inline-flex items-center justify-center text-accent hover:text-light transition-colors duration-300 font-medium tracking-wide"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                @lazarofernandes.of
+            </a>
          </div>
       </div>
     </Section>
