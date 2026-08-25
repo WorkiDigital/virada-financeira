@@ -7,6 +7,7 @@ import EventDetailsSection from './components/EventDetailsSection';
 import FaqSection from './components/FaqSection';
 import PricingSection from './components/PricingSection';
 import FinalCtaSection from './components/FinalCtaSection';
+import WhatsAppButton from './components/WhatsAppButton';
 
 const App: React.FC = () => {
   return (
@@ -31,6 +32,7 @@ const App: React.FC = () => {
         <p className="mb-2">&copy; 2026 Virada Financeira. Todos os direitos reservados.</p>
         <p className="text-sm">Contato: suporte@viradafinanceira.com</p>
       </footer>
+      <WhatsAppButton />
     </div>
   );
 };
