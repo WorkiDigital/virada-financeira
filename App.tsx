@@ -1,4 +1,6 @@
 import React from 'react';
+import useIntersectionObserver from './hooks/useIntersectionObserver';
+import StickyHeader from './components/StickyHeader';
 import HeroSection from './components/HeroSection';
 import ExperienceSection from './components/ExperienceSection';
 import AudienceSection from './components/AudienceSection';
@@ -10,10 +12,18 @@ import FinalCtaSection from './components/FinalCtaSection';
 import WhatsAppButton from './components/WhatsAppButton';
 
 const App: React.FC = () => {
+  const [heroRef, isHeroIntersecting] = useIntersectionObserver<HTMLDivElement>({
+    threshold: 0.1,
+  });
+  const eventDate = '2026-08-31T17:30:00-03:00';
+
   return (
     <div className="bg-primary overflow-x-hidden font-sans min-h-screen text-light">
+      <StickyHeader isVisible={!isHeroIntersecting} eventDate={eventDate} />
       <main>
-        <HeroSection />
+        <div ref={heroRef}>
+          <HeroSection />
+        </div>
         <div className="divider-gold max-w-4xl mx-auto opacity-30 my-4" />
         <ExperienceSection />
         <div className="divider-gold max-w-4xl mx-auto opacity-30 my-4" />

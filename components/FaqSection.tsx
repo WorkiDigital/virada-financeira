@@ -12,7 +12,7 @@ const faqItems: FaqItem[] = [
   },
   {
     question: 'O que está incluído no evento presencial?',
-    answer: 'Sua inscrição garante acesso ao curso online preparatório, à imersão presencial completa de um dia, participação nas operações ao vivo e o coffee break para networking.',
+    answer: 'Sua inscrição garante acesso à imersão presencial completa, kit com crachá e materiais exclusivos, coffee break para networking, acesso a toda a programação e ao grupo de relacionamento pós-evento.',
   },
   {
     question: 'Como posso garantir minha vaga?',

@@ -4,19 +4,17 @@ import { useState, useEffect, useRef, RefObject } from 'react';
 const useIntersectionObserver = <T extends HTMLElement,>(
   options: IntersectionObserverInit = { threshold: 0.1 }
 ): [RefObject<T>, boolean] => {
-  const [isIntersecting, setIntersecting] = useState(false);
+  const [isIntersecting, setIntersecting] = useState(true);
   const ref = useRef<T>(null);
+
+  const threshold = options.threshold;
+  const root = options.root;
+  const rootMargin = options.rootMargin;
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        setIntersecting(true);
-        // Disconnect after first intersection to avoid re-triggering
-        if (ref.current) {
-            observer.unobserve(ref.current);
-        }
-      }
-    }, options);
+      setIntersecting(entry.isIntersecting);
+    }, { threshold, root, rootMargin });
 
     if (ref.current) {
       observer.observe(ref.current);
@@ -24,14 +22,13 @@ const useIntersectionObserver = <T extends HTMLElement,>(
 
     return () => {
       if (ref.current) {
-        // eslint-disable-next-line react-hooks/exhaustive-deps
         observer.unobserve(ref.current);
       }
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [options.threshold, options.root, options.rootMargin]);
+  }, [threshold, root, rootMargin]);
 
   return [ref, isIntersecting];
 };
 
 export default useIntersectionObserver;
+

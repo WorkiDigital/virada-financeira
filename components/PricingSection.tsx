@@ -132,6 +132,9 @@ const PricingSection: React.FC = () => {
             </ul>
 
             <div className="border border-gold-subtle rounded-sm p-4 mb-6 space-y-3 bg-[#14100C]/80">
+              <p className="text-[11px] sm:text-xs font-bold text-accent tracking-wider uppercase flex items-center gap-1.5 pb-1 border-b border-gold-subtle/40">
+                <span>📌</span> Encontro exclusivo pós-evento (bônus Ouro)
+              </p>
               <div className="flex items-center text-light-gray text-sm">
                 <CalendarIcon className="w-4 h-4 mr-3 text-accent shrink-0" />
                 14/09/2026

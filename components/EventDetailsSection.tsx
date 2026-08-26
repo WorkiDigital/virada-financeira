@@ -50,11 +50,11 @@ const EventDetailsSection: React.FC = () => {
         <div className="grid grid-cols-1 grid-rows-3 gap-4 h-[380px] md:h-[480px]">
           <div className="rounded-sm overflow-hidden shadow-2xl relative group row-span-2 border border-gold-subtle">
              <div className="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
-             <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmk2e6Pknk30qidXv1X9NJ7PvZaKc2iiv3Cn4qgJzUYeBC7yODN62HYFtiWceXkDGijJWjnP9FWZ3PptSWJUttx7kVaSQqs2SCt28Cq7v5eTq1HJXio8Z8Y1hH49enLbwPEBOzs_QKUIb9p=s680-w680-h510-rw" alt="Auditório Rooftop Piazza Aldeota" loading="lazy" className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105" />
+             <img src="/images/local-1.jpg" alt="Auditório Rooftop Piazza Aldeota" loading="lazy" className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105" />
           </div>
           <div className="rounded-sm overflow-hidden shadow-2xl relative group row-span-1 border border-gold-subtle">
              <div className="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
-             <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl2wvmDfXDVZZV-tt-EpDto9i4EYD7whULD1PeZ-DmvQ3hcUg92ntqTjtPlu3SQLgJUpsr1Z7eDKlfJSoybKHKYf8CKygT5dNnmdkqpqx6RwT5pFz9kN4xXomrW10QvVLR_Ri19ZlYX4dNa=s680-w680-h510-rw" alt="Espaço Corporativo Piazza" loading="lazy" className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105" />
+             <img src="/images/local-2.jpg" alt="Espaço Corporativo Piazza" loading="lazy" className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105" />
           </div>
         </div>
       </div>

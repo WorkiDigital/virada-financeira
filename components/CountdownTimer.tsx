@@ -78,8 +78,12 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate, small = fal
   }, [hasEnded, targetDate]);
 
   return (
-    <div className="flex flex-col items-center">
-      <div className={`flex justify-center items-center ${small ? 'space-x-4' : 'space-x-2 sm:space-x-4'}`}>
+    <div 
+      role="timer"
+      aria-label={hasEnded ? "O evento começou!" : `Faltam ${timeLeft.days} dias, ${timeLeft.hours} horas, ${timeLeft.minutes} minutos e ${timeLeft.seconds} segundos para o evento`}
+      className="flex flex-col items-center"
+    >
+      <div className={`flex justify-center items-center ${small ? 'space-x-4' : 'space-x-2 sm:space-x-4'}`} aria-hidden="true">
         <TimeUnit value={timeLeft.days} label={small ? "Dias" : "Dias"} small={small} />
         <TimeUnit value={timeLeft.hours} label={small ? "Hrs" : "Horas"} small={small} />
         <TimeUnit value={timeLeft.minutes} label={small ? "Min" : "Minutos"} small={small} />
