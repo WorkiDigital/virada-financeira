@@ -16,20 +16,20 @@ const faqItems: FaqItem[] = [
   },
   {
     question: 'Como posso garantir minha vaga?',
-    answer: 'Para garantir sua vaga, basta preencher o formulário de inscrição nesta página. Nossa equipe entrará em contato para os próximos passos. As vagas são preenchidas por ordem de inscrição.',
+    answer: 'Para garantir sua vaga, basta escolher sua modalidade de ingresso (Platinum ou Ouro) e concluir a inscrição nesta página. As vagas são estritamente limitadas.',
   },
   {
     question: 'Quantas vagas estão disponíveis?',
-    answer: 'As vagas são estritamente limitadas para garantir uma experiência de alta qualidade, com proximidade e interação. Recomendamos que você se inscreva o mais rápido possível para não ficar de fora.',
+    answer: 'As vagas são estritamente limitadas a apenas 50 participantes no total para garantir uma experiência exclusiva e próxima.',
   },
 ];
 
 const FaqSection: React.FC = () => {
   return (
-    <Section>
+    <Section className="bg-black">
       <SectionHeader
         title="Perguntas Frequentes"
-        subtitle="Tire suas últimas dúvidas antes de garantir sua vaga."
+        subtitle="Tire suas dúvidas antes de garantir sua vaga exclusiva."
       />
       <div className="mt-12 max-w-3xl mx-auto space-y-4">
         {faqItems.map((item, index) => (
@@ -41,3 +41,4 @@ const FaqSection: React.FC = () => {
 };
 
 export default FaqSection;
+

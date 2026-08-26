@@ -14,19 +14,36 @@ const App: React.FC = () => {
     <div className="bg-primary overflow-x-hidden font-sans min-h-screen text-light">
       <main>
         <HeroSection />
+        <div className="divider-gold max-w-4xl mx-auto opacity-30 my-4" />
         <ExperienceSection />
+        <div className="divider-gold max-w-4xl mx-auto opacity-30 my-4" />
         <PricingSection />
+        <div className="divider-gold max-w-4xl mx-auto opacity-30 my-4" />
         <AudienceSection />
+        <div className="divider-gold max-w-4xl mx-auto opacity-30 my-4" />
         <WhyAttendSection />
+        <div className="divider-gold max-w-4xl mx-auto opacity-30 my-4" />
         <EventDetailsSection />
+        <div className="divider-gold max-w-4xl mx-auto opacity-30 my-4" />
         <FaqSection />
+        <div className="divider-gold max-w-4xl mx-auto opacity-30 my-4" />
         <FinalCtaSection />
       </main>
 
-      <footer className="py-12 text-center text-light-gray/60 font-light border-t border-light/5">
-        <p className="font-serif text-xl text-accent mb-4">Virada Financeira</p>
-        <p className="mb-2">&copy; 2026 Virada Financeira. Todos os direitos reservados.</p>
-        <p className="text-sm">Contato: suporte@viradafinanceira.com</p>
+      <footer className="py-14 text-center text-light-gray/70 font-light border-t border-gold-subtle bg-black">
+        <div className="flex flex-col items-center justify-center mb-6">
+          <span className="text-light font-sans font-semibold tracking-[0.3em] text-xs uppercase opacity-80 mb-0.5">
+            Imersão
+          </span>
+          <span className="font-anton text-gold-metallic text-3xl sm:text-4xl leading-none uppercase">
+            Virada
+          </span>
+          <span className="text-light font-sans font-semibold tracking-[0.3em] text-xs uppercase opacity-80 mt-0.5">
+            Financeira
+          </span>
+        </div>
+        <p className="mb-2 text-xs sm:text-sm">&copy; 2026 Imersão Virada Financeira. Todos os direitos reservados.</p>
+        <p className="text-xs text-light-gray/50">Evento Presencial Exclusivo • Fortaleza/CE</p>
       </footer>
       <WhatsAppButton />
     </div>

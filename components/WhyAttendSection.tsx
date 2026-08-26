@@ -25,19 +25,19 @@ const testimonials: Testimonial[] = [
 
 const WhyAttendSection: React.FC = () => {
   return (
-    <Section>
+    <Section className="bg-black">
       <SectionHeader
         title="Por que participar?"
         subtitle={<>Centenas de alunos já transformaram sua forma de operar e investir. <span className="font-bold text-light">Agora é a sua vez.</span></>}
       />
       <div className="mt-16 grid gap-8 lg:grid-cols-3">
         {testimonials.map((testimonial) => (
-          <div key={testimonial.author} className="p-10 bg-surface/40 backdrop-blur-sm rounded-sm border border-light/5 flex flex-col relative group">
-            <QuoteIcon className="h-8 w-8 text-accent/50 mb-6 absolute top-8 left-8" />
-            <blockquote className="text-light-gray/90 font-light leading-relaxed flex-grow mt-10">"{testimonial.quote}"</blockquote>
-            <footer className="mt-8 pt-6 border-t border-light/5">
-              <p className="font-medium tracking-wide text-light">{testimonial.author}</p>
-              <p className="text-xs tracking-wider uppercase text-accent mt-1">{testimonial.role}</p>
+          <div key={testimonial.author} className="p-8 sm:p-10 bg-black-soft rounded-sm border border-gold-subtle flex flex-col relative group shadow-[0_4px_25px_rgba(0,0,0,0.5)] transition-all duration-300 hover:border-[#D98B1F] hover:-translate-y-1">
+            <QuoteIcon className="h-8 w-8 text-accent/60 mb-6 absolute top-8 left-8" />
+            <blockquote className="text-light-gray font-light text-sm sm:text-base leading-relaxed flex-grow mt-10">"{testimonial.quote}"</blockquote>
+            <footer className="mt-8 pt-6 border-t border-gold-subtle">
+              <p className="font-bold tracking-wide text-light">{testimonial.author}</p>
+              <p className="text-xs tracking-wider uppercase text-accent font-semibold mt-1">{testimonial.role}</p>
             </footer>
           </div>
         ))}
@@ -47,3 +47,4 @@ const WhyAttendSection: React.FC = () => {
 };
 
 export default WhyAttendSection;
+

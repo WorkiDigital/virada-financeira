@@ -3,19 +3,19 @@ import Section from './Section';
 
 const FinalCtaSection: React.FC = () => {
   return (
-    <Section className="text-center relative py-24">
-      <div className="absolute inset-0 bg-surface/30 backdrop-blur-3xl rounded-sm border-t border-b border-accent/10 pointer-events-none"></div>
-      <div className="relative z-10">
-        <h2 className="text-3xl sm:text-5xl font-serif text-accent mb-6 leading-tight">
-          A sua Virada Financeira <br className="hidden sm:block" /> Começa Agora
+    <Section className="text-center relative py-24 bg-black overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(217,139,31,0.1),transparent_70%)] pointer-events-none"></div>
+      <div className="relative z-10 max-w-4xl mx-auto px-4">
+        <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold font-sans text-light mb-6 leading-tight">
+          A sua <span className="text-gold-metallic font-anton uppercase text-4xl sm:text-6xl md:text-7xl">Virada</span> Financeira <br className="hidden sm:block" /> Começa Agora
         </h2>
-        <p className="mt-4 max-w-2xl mx-auto text-lg font-light text-light-gray/90 leading-relaxed mb-10">
+        <p className="mt-4 max-w-2xl mx-auto text-base sm:text-lg font-light text-light-gray leading-relaxed mb-10">
           Você já viu o que vai acontecer, já sabe para quem é e já entendeu a transformação. 
           O próximo passo depende apenas da sua decisão.
         </p>
         <a
           href="#ofertas"
-          className="inline-block px-10 py-5 bg-accent text-primary font-bold tracking-widest uppercase text-sm rounded-sm hover:bg-accent/90 transition-all duration-300 shadow-[0_0_20px_rgba(197,160,89,0.3)] animate-subtle-pulse"
+          className="inline-flex items-center justify-center px-10 py-5 bg-[#D98B1F] text-[#050505] font-bold font-sans tracking-widest uppercase text-sm sm:text-base rounded-sm hover:brightness-110 active:scale-95 transition-all duration-300 shadow-[0_4px_25px_rgba(217,139,31,0.35)] animate-subtle-pulse"
         >
           ESCOLHER MEU INGRESSO
         </a>
@@ -25,3 +25,4 @@ const FinalCtaSection: React.FC = () => {
 };
 
 export default FinalCtaSection;
+

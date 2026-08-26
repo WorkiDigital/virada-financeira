@@ -13,14 +13,16 @@ const StickyHeader: React.FC<StickyHeaderProps> = ({ isVisible, eventDate }) => 
       aria-hidden={!isVisible}
       className={`fixed top-0 left-0 w-full z-40 transition-all duration-500 ease-in-out ${
         isVisible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'
-      } bg-surface/80 backdrop-blur-md border-b border-light/5`}
+      } bg-black/90 backdrop-blur-md border-b border-gold-subtle`}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           
           <div className="flex-1 flex justify-start">
              <div className="hidden sm:block">
-                <p className="text-sm font-bold text-light whitespace-nowrap">Imersão Virada Financeira</p>
+                <p className="text-sm font-bold font-sans text-light whitespace-nowrap">
+                  Imersão <span className="text-accent">Virada</span> Financeira
+                </p>
                 <p className="text-xs text-light-gray whitespace-nowrap">Fortaleza | 31 de Agosto</p>
              </div>
           </div>
@@ -36,7 +38,7 @@ const StickyHeader: React.FC<StickyHeaderProps> = ({ isVisible, eventDate }) => 
                href="https://pay.cakto.com.br/d2usqge_1061139"
                target="_blank"
                rel="noopener noreferrer"
-               className="px-6 py-2 text-base !rounded-lg"
+               className="px-6 py-2.5 text-sm !rounded-sm"
             >
               Garantir Vaga
             </CtaButton>
@@ -49,3 +51,4 @@ const StickyHeader: React.FC<StickyHeaderProps> = ({ isVisible, eventDate }) => 
 };
 
 export default StickyHeader;
+

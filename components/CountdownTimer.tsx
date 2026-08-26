@@ -22,16 +22,16 @@ const TimeUnit: React.FC<TimeUnitProps> = ({ value, label, small }) => {
   if (small) {
     return (
       <div className="flex flex-col items-center">
-        <span className="text-lg sm:text-xl font-bold text-accent">{String(value).padStart(2, '0')}</span>
+        <span className="text-base sm:text-lg font-bold font-sans text-accent">{String(value).padStart(2, '0')}</span>
         <span className="text-[9px] sm:text-[10px] font-medium text-light-gray uppercase tracking-wider">{label}</span>
       </div>
     );
   }
 
   return (
-    <div className="flex flex-col items-center justify-center bg-surface/80 backdrop-blur-md rounded-sm p-4 min-w-[70px] sm:min-w-[90px] border border-light/5 shadow-2xl">
-      <span className="text-3xl sm:text-4xl font-serif text-light">{String(value).padStart(2, '0')}</span>
-      <span className="text-xs sm:text-sm font-light text-accent uppercase tracking-widest mt-1">{label}</span>
+    <div className="flex flex-col items-center justify-center bg-black-soft/90 backdrop-blur-md rounded-sm py-3 px-3 sm:py-4 sm:px-5 min-w-[65px] sm:min-w-[85px] border border-gold-subtle shadow-[0_4px_20px_rgba(0,0,0,0.6)]">
+      <span className="text-2xl sm:text-4xl font-anton text-light tracking-wide leading-none">{String(value).padStart(2, '0')}</span>
+      <span className="text-[9px] sm:text-xs font-semibold text-accent uppercase tracking-widest mt-1.5">{label}</span>
     </div>
   );
 };

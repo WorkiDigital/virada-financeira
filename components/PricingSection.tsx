@@ -37,13 +37,15 @@ const PinIcon = ({ className }: { className?: string }) => (
 
 const PricingSection: React.FC = () => {
   return (
-    <section id="ofertas" className="relative py-20 bg-primary">
-      <div className="absolute inset-0 bg-surface/20 backdrop-blur-3xl border-t border-accent/5 pointer-events-none"></div>
+    <section id="ofertas" className="relative py-24 bg-black overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(217,139,31,0.06),transparent_70%)] pointer-events-none"></div>
       
-      <div className="relative z-10 max-w-5xl mx-auto px-6">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-serif text-accent mb-4">Escolha sua Experiência</h2>
-          <p className="text-light-gray font-light text-lg max-w-2xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-sans text-light mb-4">
+            Escolha sua Experiência
+          </h2>
+          <p className="text-light-gray font-light text-base sm:text-lg max-w-2xl mx-auto">
             Vagas limitadas para garantir proximidade, qualidade e resultado. Não deixe para depois.
           </p>
         </div>
@@ -51,14 +53,14 @@ const PricingSection: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-8 items-stretch">
           
           {/* Card Platinum */}
-          <div className="bg-[#121212] rounded-3xl p-8 lg:p-10 border border-white/10 flex flex-col relative z-0">
+          <div className="bg-black-soft rounded-sm p-8 lg:p-10 border border-gold-subtle flex flex-col relative z-0 shadow-[0_4px_25px_rgba(0,0,0,0.6)]">
             <h3 className="text-2xl font-bold text-light tracking-widest uppercase mb-2">Platinum</h3>
             <div className="flex items-baseline mb-8">
               <span className="text-xl text-light-gray mr-1">R$</span>
-              <span className="text-6xl font-bold text-light">97</span>
+              <span className="text-6xl font-anton text-light tracking-normal">97</span>
             </div>
             
-            <ul className="space-y-5 flex-1 mb-10">
+            <ul className="space-y-4 flex-1 mb-10">
               {[
                 'Acesso presencial à Virada Financeira',
                 'Crachá exclusivo',
@@ -70,8 +72,8 @@ const PricingSection: React.FC = () => {
                 'Acesso ao grupo de relacionamento após a conclusão do evento'
               ].map((item, i) => (
                 <li key={i} className="flex items-start">
-                  <CheckIcon className="w-5 h-5 text-light-gray mr-4 shrink-0 mt-0.5" />
-                  <span className="text-light-gray/90 text-sm md:text-base font-light leading-snug">{item}</span>
+                  <CheckIcon className="w-5 h-5 text-light-gray mr-3 shrink-0 mt-0.5" />
+                  <span className="text-light-gray text-sm md:text-base font-light leading-snug">{item}</span>
                 </li>
               ))}
             </ul>
@@ -81,7 +83,7 @@ const PricingSection: React.FC = () => {
                 href="https://pay.cakto.com.br/d2usqge_1061139"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full flex justify-center py-4 border border-light/50 text-light text-sm font-bold tracking-widest uppercase rounded-lg hover:bg-light hover:text-primary transition-all duration-300"
+                className="w-full flex justify-center py-4 border border-gold-subtle text-light text-sm font-bold font-sans tracking-widest uppercase rounded-sm hover:bg-[#D98B1F] hover:text-[#050505] hover:border-[#D98B1F] transition-all duration-300"
               >
                 Garantir Platinum
               </a>
@@ -92,30 +94,30 @@ const PricingSection: React.FC = () => {
           </div>
 
           {/* Card Ouro */}
-          <div className="bg-[#121212] rounded-3xl p-8 lg:p-10 border border-accent flex flex-col relative z-10 shadow-[0_0_30px_rgba(197,160,89,0.1)]">
-            <div className="absolute -top-4 right-6 bg-[#1a150b] border border-accent text-accent px-4 py-1.5 rounded-full text-[10px] sm:text-xs font-bold flex items-center gap-2 uppercase tracking-widest">
-              <StarIcon className="w-3.5 h-3.5" filled />
+          <div className="bg-black-soft rounded-sm p-8 lg:p-10 border-2 border-[#D98B1F] flex flex-col relative z-10 shadow-[0_0_35px_rgba(217,139,31,0.2)]">
+            <div className="absolute -top-3.5 right-6 bg-[#14100C] border border-[#D98B1F] text-accent px-4 py-1 rounded-full text-[10px] sm:text-xs font-bold font-sans flex items-center gap-2 uppercase tracking-widest shadow-md">
+              <StarIcon className="w-3.5 h-3.5 text-accent" filled />
               Experiência mais exclusiva
             </div>
             
             <h3 className="text-2xl font-bold text-accent tracking-widest uppercase mb-2">Ouro</h3>
             <div className="flex items-baseline mb-8">
               <span className="text-xl text-accent mr-1">R$</span>
-              <span className="text-6xl font-bold text-light">297</span>
+              <span className="text-6xl font-anton text-light tracking-normal">297</span>
             </div>
             
-            <ul className="mb-6">
+            <ul className="mb-4">
               <li className="flex items-start">
-                <CheckIcon className="w-5 h-5 text-accent mr-4 shrink-0 mt-0.5" />
-                <span className="text-light-gray/90 text-sm md:text-base font-light leading-snug">
+                <CheckIcon className="w-5 h-5 text-accent mr-3 shrink-0 mt-0.5" />
+                <span className="text-light text-sm md:text-base font-semibold leading-snug">
                   Inclui tudo do Platinum, mais:
                 </span>
               </li>
             </ul>
             
-            <div className="h-px bg-white/5 w-full mb-6"></div>
+            <div className="h-px bg-gold-subtle w-full mb-6"></div>
 
-            <ul className="space-y-5 flex-1 mb-8">
+            <ul className="space-y-4 flex-1 mb-8">
               {[
                 'Caneta personalizada',
                 'Barra de cereal no Kit Ouro',
@@ -123,29 +125,29 @@ const PricingSection: React.FC = () => {
                 'Alinhamento e estratégia prática'
               ].map((item, i) => (
                 <li key={i} className="flex items-start">
-                  <StarIcon className="w-5 h-5 text-accent mr-4 shrink-0 mt-0.5" />
-                  <span className="text-light-gray/90 text-sm md:text-base font-medium leading-snug">{item}</span>
+                  <StarIcon className="w-5 h-5 text-accent mr-3 shrink-0 mt-0.5" />
+                  <span className="text-light text-sm md:text-base font-medium leading-snug">{item}</span>
                 </li>
               ))}
             </ul>
 
-            <div className="border border-accent/20 rounded-xl p-5 mb-8 space-y-4 bg-accent/5">
-              <div className="flex items-center text-light-gray/90 text-sm">
-                <CalendarIcon className="w-4 h-4 mr-3 text-accent" />
+            <div className="border border-gold-subtle rounded-sm p-4 mb-6 space-y-3 bg-[#14100C]/80">
+              <div className="flex items-center text-light-gray text-sm">
+                <CalendarIcon className="w-4 h-4 mr-3 text-accent shrink-0" />
                 14/09/2026
               </div>
-              <div className="flex items-center text-light-gray/90 text-sm">
-                <ClockIcon className="w-4 h-4 mr-3 text-accent" />
+              <div className="flex items-center text-light-gray text-sm">
+                <ClockIcon className="w-4 h-4 mr-3 text-accent shrink-0" />
                 Das 18h às 22h
               </div>
-              <div className="flex items-center text-light-gray/90 text-sm">
-                <PinIcon className="w-4 h-4 mr-3 text-accent" />
+              <div className="flex items-center text-light-gray text-sm">
+                <PinIcon className="w-4 h-4 mr-3 text-accent shrink-0" />
                 Fortaleza/CE
               </div>
             </div>
 
-            <div className="flex justify-center mb-8">
-              <span className="border border-accent/40 text-accent px-5 py-2 rounded-full text-xs font-bold tracking-widest uppercase bg-accent/5">
+            <div className="flex justify-center mb-6">
+              <span className="border border-[#D98B1F]/40 text-accent px-4 py-1.5 rounded-full text-[11px] sm:text-xs font-bold tracking-widest uppercase bg-[#14100C]">
                 Apenas 10–20 vagas para o Ouro
               </span>
             </div>
@@ -155,11 +157,11 @@ const PricingSection: React.FC = () => {
                 href="https://pay.cakto.com.br/63utur9_1061427"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full flex justify-center py-4 bg-accent text-primary text-sm font-bold tracking-widest uppercase rounded-lg hover:bg-accent/90 transition-all duration-300 shadow-[0_0_20px_rgba(197,160,89,0.2)]"
+                className="w-full flex justify-center py-4 bg-[#D98B1F] text-[#050505] text-sm font-bold font-sans tracking-widest uppercase rounded-sm hover:brightness-110 active:scale-95 transition-all duration-300 shadow-[0_4px_20px_rgba(217,139,31,0.3)]"
               >
                 Quero Ser Ouro
               </a>
-              <p className="text-center text-accent/60 text-xs mt-4">
+              <p className="text-center text-accent/70 text-xs mt-4">
                 Dúvidas? Fale com a equipe
               </p>
             </div>
@@ -172,3 +174,4 @@ const PricingSection: React.FC = () => {
 };
 
 export default PricingSection;
+

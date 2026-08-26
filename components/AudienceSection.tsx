@@ -23,20 +23,21 @@ const profiles = [
 
 const AudienceSection: React.FC = () => {
   return (
-    <Section>
+    <Section className="bg-black">
       <SectionHeader
         title="Para quem é este evento?"
         subtitle="Se você se identifica com algum destes perfis, esta imersão é para você."
       />
       <div className="mt-16 grid gap-8 md:grid-cols-3">
         {profiles.map((profile) => (
-          <div key={profile.name} className="bg-surface/50 backdrop-blur-sm rounded-sm overflow-hidden border border-light/5 group">
-            <div className="overflow-hidden h-56">
-                <img src={profile.imageUrl} alt={profile.name} loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+          <div key={profile.name} className="bg-black-soft rounded-sm overflow-hidden border border-gold-subtle group shadow-[0_4px_25px_rgba(0,0,0,0.5)] transition-all duration-300 hover:border-[#D98B1F] hover:-translate-y-1">
+            <div className="overflow-hidden h-56 relative">
+              <div className="absolute inset-0 bg-gradient-to-t from-black-soft via-transparent to-transparent z-10"></div>
+              <img src={profile.imageUrl} alt={profile.name} loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80" />
             </div>
             <div className="p-8">
-              <h3 className="text-2xl font-serif text-accent">{profile.name}</h3>
-              <p className="mt-4 text-light-gray/80 font-light leading-relaxed">{profile.description}</p>
+              <h3 className="text-2xl font-bold font-sans text-accent">{profile.name}</h3>
+              <p className="mt-3 text-light-gray font-light leading-relaxed text-sm sm:text-base">{profile.description}</p>
             </div>
           </div>
         ))}
@@ -46,3 +47,4 @@ const AudienceSection: React.FC = () => {
 };
 
 export default AudienceSection;
+
