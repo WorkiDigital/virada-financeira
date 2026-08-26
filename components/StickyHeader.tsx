@@ -38,7 +38,7 @@ const StickyHeader: React.FC<StickyHeaderProps> = ({ isVisible, eventDate }) => 
                href="https://pay.cakto.com.br/d2usqge_1061139"
                target="_blank"
                rel="noopener noreferrer"
-               className="px-6 py-2.5 text-sm !rounded-sm"
+               className="px-6 py-2.5 text-sm !rounded-xl"
             >
               Garantir Vaga
             </CtaButton>

@@ -49,7 +49,7 @@ const ExperienceSection: React.FC = () => {
         {features.map((feature) => (
           <div 
             key={feature.name} 
-            className="flex flex-col items-center text-center p-8 bg-black-soft rounded-sm border border-gold-subtle transform transition-all duration-300 hover:-translate-y-1 hover:border-[#D98B1F] group shadow-[0_4px_20px_rgba(0,0,0,0.5)]"
+            className="flex flex-col items-center text-center p-8 bg-black-soft rounded-2xl border border-gold-subtle transform transition-all duration-300 hover:-translate-y-1 hover:border-[#D98B1F] group shadow-[0_4px_20px_rgba(0,0,0,0.5)]"
           >
             <div className="flex items-center justify-center h-14 w-14 rounded-full bg-black border border-gold-subtle text-accent mb-6 group-hover:scale-110 group-hover:border-[#D98B1F] transition-all duration-300">
               <feature.icon className="h-6 w-6 text-accent" />
@@ -61,7 +61,7 @@ const ExperienceSection: React.FC = () => {
       </div>
 
       {/* Speaker Feature Card */}
-      <div className="mt-20 max-w-4xl mx-auto bg-black-soft border border-gold-subtle p-8 md:p-12 rounded-sm text-center relative overflow-hidden group shadow-[0_10px_30px_rgba(0,0,0,0.6)]">
+      <div className="mt-20 max-w-4xl mx-auto bg-black-soft border border-gold-subtle p-8 md:p-12 rounded-2xl text-center relative overflow-hidden group shadow-[0_10px_30px_rgba(0,0,0,0.6)]">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(217,139,31,0.08),transparent_60%)] pointer-events-none"></div>
         <div className="relative z-10 flex flex-col items-center">
           <div className="w-32 h-32 md:w-36 md:h-36 rounded-full overflow-hidden border-2 border-accent mb-6 shadow-[0_0_25px_rgba(217,139,31,0.25)]">

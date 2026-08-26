@@ -64,7 +64,7 @@ const HeroSection: React.FC = () => {
         <div className="mt-6 sm:mt-10 flex flex-col items-center gap-2 sm:gap-3 w-full sm:w-auto">
           <a 
             href="#ofertas" 
-            className="w-full sm:w-auto px-8 sm:px-12 py-3.5 sm:py-5 bg-[#D98B1F] text-[#050505] font-bold font-sans tracking-widest uppercase text-xs sm:text-base rounded-sm hover:brightness-110 hover:-translate-y-0.5 active:scale-95 transition-all duration-300 shadow-[0_4px_25px_rgba(217,139,31,0.35)] animate-subtle-pulse flex items-center justify-center"
+            className="w-full sm:w-auto px-8 sm:px-12 py-3.5 sm:py-5 bg-[#D98B1F] text-[#050505] font-bold font-sans tracking-widest uppercase text-xs sm:text-base rounded-xl hover:brightness-110 hover:-translate-y-0.5 active:scale-95 transition-all duration-300 shadow-[0_4px_25px_rgba(217,139,31,0.35)] animate-subtle-pulse flex items-center justify-center"
           >
             VER OPÇÕES DE INGRESSOS
           </a>

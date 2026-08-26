@@ -33,9 +33,11 @@ const EventDetailsSection: React.FC = () => {
                  </div>
               </div>
             </a>
-            <p className="font-bold text-accent uppercase tracking-widest text-xs sm:text-sm pt-4 border-t border-gold-subtle">
-              Presencial | Vagas Limitadas
-            </p>
+            <div className="pt-4 flex justify-center md:justify-start">
+              <span className="inline-flex items-center justify-center px-6 py-2.5 rounded-full border border-gold-subtle bg-[#14100C] text-accent font-bold uppercase tracking-widest text-xs sm:text-sm shadow-[0_2px_15px_rgba(0,0,0,0.5)]">
+                Presencial | Vagas Limitadas
+              </span>
+            </div>
           </div>
           <div className="mt-10">
               <CtaButton
@@ -48,11 +50,11 @@ const EventDetailsSection: React.FC = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 grid-rows-3 gap-4 h-[380px] md:h-[480px]">
-          <div className="rounded-sm overflow-hidden shadow-2xl relative group row-span-2 border border-gold-subtle">
+          <div className="rounded-2xl overflow-hidden shadow-2xl relative group row-span-2 border border-gold-subtle">
              <div className="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
              <img src="/images/local-1.jpg" alt="Auditório Rooftop Piazza Aldeota" loading="lazy" className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105" />
           </div>
-          <div className="rounded-sm overflow-hidden shadow-2xl relative group row-span-1 border border-gold-subtle">
+          <div className="rounded-2xl overflow-hidden shadow-2xl relative group row-span-1 border border-gold-subtle">
              <div className="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
              <img src="/images/local-2.jpg" alt="Espaço Corporativo Piazza" loading="lazy" className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105" />
           </div>

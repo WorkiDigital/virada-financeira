@@ -53,7 +53,7 @@ const PricingSection: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-8 items-stretch">
           
           {/* Card Platinum */}
-          <div className="bg-black-soft rounded-sm p-8 lg:p-10 border border-gold-subtle flex flex-col relative z-0 shadow-[0_4px_25px_rgba(0,0,0,0.6)]">
+          <div className="bg-black-soft rounded-2xl p-8 lg:p-10 border border-gold-subtle flex flex-col relative z-0 shadow-[0_4px_25px_rgba(0,0,0,0.6)]">
             <h3 className="text-2xl font-bold text-light tracking-widest uppercase mb-2">Platinum</h3>
             <div className="flex items-baseline mb-8">
               <span className="text-xl text-light-gray mr-1">R$</span>
@@ -83,7 +83,7 @@ const PricingSection: React.FC = () => {
                 href="https://pay.cakto.com.br/d2usqge_1061139"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full flex justify-center py-4 border border-gold-subtle text-light text-sm font-bold font-sans tracking-widest uppercase rounded-sm hover:bg-[#D98B1F] hover:text-[#050505] hover:border-[#D98B1F] transition-all duration-300"
+                className="w-full flex justify-center py-4 border border-gold-subtle text-light text-sm font-bold font-sans tracking-widest uppercase rounded-xl hover:bg-[#D98B1F] hover:text-[#050505] hover:border-[#D98B1F] transition-all duration-300"
               >
                 Garantir Platinum
               </a>
@@ -94,7 +94,7 @@ const PricingSection: React.FC = () => {
           </div>
 
           {/* Card Ouro */}
-          <div className="bg-black-soft rounded-sm p-8 lg:p-10 border-2 border-[#D98B1F] flex flex-col relative z-10 shadow-[0_0_35px_rgba(217,139,31,0.2)]">
+          <div className="bg-black-soft rounded-2xl p-8 lg:p-10 border-2 border-[#D98B1F] flex flex-col relative z-10 shadow-[0_0_35px_rgba(217,139,31,0.2)]">
             <div className="absolute -top-3.5 right-6 bg-[#14100C] border border-[#D98B1F] text-accent px-4 py-1 rounded-full text-[10px] sm:text-xs font-bold font-sans flex items-center gap-2 uppercase tracking-widest shadow-md">
               <StarIcon className="w-3.5 h-3.5 text-accent" filled />
               Experiência mais exclusiva
@@ -131,7 +131,7 @@ const PricingSection: React.FC = () => {
               ))}
             </ul>
 
-            <div className="border border-gold-subtle rounded-sm p-4 mb-6 space-y-3 bg-[#14100C]/80">
+            <div className="border border-gold-subtle rounded-xl p-4 mb-6 space-y-3 bg-[#14100C]/80">
               <p className="text-[11px] sm:text-xs font-bold text-accent tracking-wider uppercase flex items-center gap-1.5 pb-1 border-b border-gold-subtle/40">
                 <span>📌</span> Encontro exclusivo pós-evento (bônus Ouro)
               </p>
@@ -160,7 +160,7 @@ const PricingSection: React.FC = () => {
                 href="https://pay.cakto.com.br/63utur9_1061427"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full flex justify-center py-4 bg-[#D98B1F] text-[#050505] text-sm font-bold font-sans tracking-widest uppercase rounded-sm hover:brightness-110 active:scale-95 transition-all duration-300 shadow-[0_4px_20px_rgba(217,139,31,0.3)]"
+                className="w-full flex justify-center py-4 bg-[#D98B1F] text-[#050505] text-sm font-bold font-sans tracking-widest uppercase rounded-xl hover:brightness-110 active:scale-95 transition-all duration-300 shadow-[0_4px_20px_rgba(217,139,31,0.3)]"
               >
                 Quero Ser Ouro
               </a>

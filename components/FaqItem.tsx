@@ -11,7 +11,7 @@ const FaqItem: React.FC<FaqItemProps> = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="bg-black-soft border border-gold-subtle rounded-sm overflow-hidden transition-all duration-300">
+    <div className="bg-black-soft border border-gold-subtle rounded-xl overflow-hidden transition-all duration-300">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full flex justify-between items-center text-left py-5 px-6 hover:text-accent transition-colors duration-300"

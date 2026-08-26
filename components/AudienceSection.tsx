@@ -30,8 +30,8 @@ const AudienceSection: React.FC = () => {
       />
       <div className="mt-16 grid gap-8 md:grid-cols-3">
         {profiles.map((profile) => (
-          <div key={profile.name} className="bg-black-soft rounded-sm overflow-hidden border border-gold-subtle group shadow-[0_4px_25px_rgba(0,0,0,0.5)] transition-all duration-300 hover:border-[#D98B1F] hover:-translate-y-1">
-            <div className="overflow-hidden h-56 relative">
+          <div key={profile.name} className="bg-black-soft rounded-2xl overflow-hidden border border-gold-subtle group shadow-[0_4px_25px_rgba(0,0,0,0.5)] transition-all duration-300 hover:border-[#D98B1F] hover:-translate-y-1">
+            <div className="overflow-hidden h-56 relative rounded-t-2xl">
               <div className="absolute inset-0 bg-gradient-to-t from-black-soft via-transparent to-transparent z-10"></div>
               <img src={profile.imageUrl} alt={profile.name} loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80" />
             </div>

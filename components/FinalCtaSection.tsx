@@ -15,7 +15,7 @@ const FinalCtaSection: React.FC = () => {
         </p>
         <a
           href="#ofertas"
-          className="inline-flex items-center justify-center px-10 py-5 bg-[#D98B1F] text-[#050505] font-bold font-sans tracking-widest uppercase text-sm sm:text-base rounded-sm hover:brightness-110 active:scale-95 transition-all duration-300 shadow-[0_4px_25px_rgba(217,139,31,0.35)] animate-subtle-pulse"
+          className="inline-flex items-center justify-center px-10 py-5 bg-[#D98B1F] text-[#050505] font-bold font-sans tracking-widest uppercase text-sm sm:text-base rounded-xl hover:brightness-110 active:scale-95 transition-all duration-300 shadow-[0_4px_25px_rgba(217,139,31,0.35)] animate-subtle-pulse"
         >
           ESCOLHER MEU INGRESSO
         </a>
