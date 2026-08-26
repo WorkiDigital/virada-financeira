@@ -115,7 +115,7 @@ const PricingSection: React.FC = () => {
               </li>
             </ul>
             
-            <div className="h-px bg-gold-subtle w-full mb-6"></div>
+            <div className="h-px bg-[#D98B1F]/25 w-full mb-6"></div>
 
             <ul className="space-y-4 flex-1 mb-8">
               {[

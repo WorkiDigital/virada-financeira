@@ -40,7 +40,7 @@ const App: React.FC = () => {
         <FinalCtaSection />
       </main>
 
-      <footer className="py-14 text-center text-light-gray/70 font-light border-t border-gold-subtle bg-black">
+      <footer className="py-14 text-center text-light-gray/70 font-light border-t border-[#D98B1F]/25 bg-black">
         <div className="flex flex-col items-center justify-center mb-6">
           <span className="text-light font-sans font-semibold tracking-[0.3em] text-xs uppercase opacity-80 mb-0.5">
             Imersão

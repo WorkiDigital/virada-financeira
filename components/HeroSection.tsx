@@ -15,8 +15,8 @@ const HeroSection: React.FC = () => {
       <div className="absolute inset-0 z-10 bg-[radial-gradient(circle_at_center,rgba(217,139,31,0.12),transparent_65%)] pointer-events-none"></div>
 
       {/* Top Bar for Event Details with Safe Area Padding */}
-      <div className="absolute top-0 left-0 w-full z-30 pt-3 sm:pt-4 pb-2.5 sm:pb-3 bg-black/90 backdrop-blur-md border-b border-gold-subtle text-center">
-        <p className="text-accent font-semibold font-sans tracking-[0.12em] sm:tracking-[0.2em] text-[10px] sm:text-xs uppercase flex flex-wrap items-center justify-center gap-x-2 sm:gap-x-4 gap-y-0.5 px-3 sm:px-4">
+      <div className="absolute top-0 left-0 w-full z-30 pt-3 sm:pt-4 pb-2.5 sm:pb-3 bg-black/90 backdrop-blur-md border-b border-[#D98B1F]/25 text-center">
+        <p className="text-accent font-semibold font-sans tracking-[0.08em] sm:tracking-[0.2em] text-[10px] sm:text-xs uppercase flex flex-wrap items-center justify-center gap-x-2 sm:gap-x-4 gap-y-0.5 px-3 sm:px-4">
           <span className="whitespace-nowrap">📅 31 DE AGOSTO</span>
           <span className="text-accent/40 hidden sm:inline">|</span>
           <span className="whitespace-nowrap">🕠 17H30</span>
