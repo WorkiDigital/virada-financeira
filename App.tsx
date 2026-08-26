@@ -11,11 +11,7 @@ import WhatsAppButton from './components/WhatsAppButton';
 
 const App: React.FC = () => {
   return (
-    <div className="bg-primary overflow-x-hidden font-sans">
-      <header className="absolute top-0 left-0 w-full z-10 p-6 bg-transparent text-center">
-        <h1 className="text-xl md:text-2xl font-serif text-accent tracking-widest uppercase">Virada Financeira</h1>
-      </header>
-
+    <div className="bg-primary overflow-x-hidden font-sans min-h-screen text-light">
       <main>
         <HeroSection />
         <ExperienceSection />
