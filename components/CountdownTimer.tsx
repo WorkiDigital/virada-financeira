@@ -22,8 +22,8 @@ const TimeUnit: React.FC<TimeUnitProps> = ({ value, label, small }) => {
   if (small) {
     return (
       <div className="flex flex-col items-center">
-        <span className="text-xl font-bold text-accent">{String(value).padStart(2, '0')}</span>
-        <span className="text-[10px] font-medium text-light-gray uppercase tracking-wider">{label}</span>
+        <span className="text-lg sm:text-xl font-bold text-accent">{String(value).padStart(2, '0')}</span>
+        <span className="text-[9px] sm:text-[10px] font-medium text-light-gray uppercase tracking-wider">{label}</span>
       </div>
     );
   }
